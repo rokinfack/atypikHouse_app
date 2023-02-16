@@ -1,0 +1,108 @@
+.admin-page {
+  .admin-nav {
+    @apply w-full flex justify-between items-center px-8 py-2 bg-white shadow ;
+    .admin-image-container {
+      .image {
+        @apply w-32 object-cover;
+      }
+    }
+
+    .admin-avatar-container {
+      @apply flex bg-white border rounded shadow;
+      .avatar-image {
+        @apply w-14 object-cover rounded-l;
+      }
+
+      .avatar-text {
+        @apply flex flex-col py-1 px-2;
+        .avatar-name {
+          @apply text-blue-900 font-semibold capitalize;
+        }
+
+        .avatar-role {
+          @apply text-gray-400;
+        }
+      }
+    }
+  }
+
+  .admin-content {
+    @apply flex;
+    main {
+      @apply w-full min-h-[90vh];
+      .breadcrumb {
+        @apply py-4;
+        .b-container {
+          @apply flex;
+          .ol {
+            @apply inline-flex items-center space-x-1 md:space-x-2;
+            .b-link-container {
+              @apply flex items-center;
+              .b-link {
+                @apply inline-flex items-center text-sm font-medium no-underline capitalize
+                text-gray-700 hover:text-gray-900;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .admin-aside-container {
+    @apply w-64 sticky top-0 self-start;
+    .admin-aside {
+      @apply overflow-y-auto py-4 px-3 bg-white border-t border-r min-h-[80vh];
+
+      .admin-list-container {
+        @apply space-y-2;
+        .admin-list-item {
+          @apply flex items-center p-2 text-base font-normal
+          text-gray-900 rounded-lg hover:bg-gray-100
+          no-underline;
+
+          .icon {
+            @apply text-gray-500 transition
+            duration-75 dark:text-gray-400
+            group-hover:text-gray-900 dark:group-hover:text-white;
+          }
+
+          .text {
+            @apply flex-1 ml-3 whitespace-nowrap font-normal text-blue-900;
+          }
+
+          .text-badge {
+            @apply inline-flex justify-center items-center px-2 ml-3
+            text-sm font-medium text-gray-800
+            bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300;
+          }
+
+          .number-badge {
+            @apply inline-flex justify-center items-center p-3 ml-3 w-3 h-3
+            text-sm font-medium text-blue-600 bg-blue-200 rounded-full
+            dark:bg-blue-900 dark:text-blue-200;
+          }
+        }
+
+        .active {
+          @apply bg-gray-50;
+        }
+
+        hr {
+          @apply px-3;
+        }
+      }
+    }
+  }
+}
+
+@import "admin-main";
+@import "admin-profile";
+@import "admin-card";
+@import "admin-habitat";
+@import "admin-reservation";
+@import "admin-common";
+@import "admin-category";
+@import "admin-blog";
+@import "pagination";
+@import "admin-settings";

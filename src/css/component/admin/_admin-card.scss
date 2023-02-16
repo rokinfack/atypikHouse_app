@@ -1,0 +1,183 @@
+.card-habitat {
+  @apply bg-white border rounded-xl flex;
+  .card-image {
+    @apply relative w-1/3;
+    .image {
+      @apply rounded-l-xl rounded-tr-xl h-full w-full;
+    }
+
+    .badge-content {
+      @apply absolute top-0 flex h-full w-full justify-between;
+      .badge-icon-content {
+        @apply m-2;
+        .badge-icon {
+          @apply p-2 bg-white rounded-full;
+        }
+      }
+
+      .badge-info {
+        .info {
+          @apply bg-amber-500 py-2 px-3
+          rounded-bl-2xl rounded-tr-xl text-white shadow-lg overflow-hidden;
+        }
+      }
+    }
+  }
+
+  .card-content-container {
+    @apply flex w-2/3;
+    .card-description-container {
+      @apply my-3 mx-6 w-full;
+      .info-content {
+        @apply flex justify-between items-start;
+        .name-container {
+          @apply flex flex-col;
+          .location {
+            @apply font-light text-gray-500 text-xl;
+          }
+
+          .name {
+            @apply font-semibold text-2xl text-gray-900;
+          }
+        }
+
+        .price-container {
+          @apply flex flex-col;
+          .start {
+            @apply text-gray-700 font-light text-xs;
+          }
+
+          .price {
+            @apply text-lg font-bold text-black;
+          }
+        }
+      }
+
+      .star-container {
+        @apply flex;
+        .stars {
+          @apply flex items-center;
+          span {
+            @apply ml-1;
+          }
+        }
+      }
+
+      .description-content {
+        @apply my-3;
+        p {
+          @apply text-gray-500 text-[14px];
+        }
+      }
+    }
+
+    .card-close-content {
+      @apply pr-4 pt-2 h-full;
+
+    }
+  }
+}
+
+.card-reservation {
+  @apply bg-white border rounded-xl flex my-3;
+  .card-image {
+    @apply relative w-1/3;
+    .image {
+      @apply rounded-l-xl rounded-tr-xl w-full h-full object-cover;
+    }
+
+    .badge-content {
+      @apply absolute top-0 flex h-full w-full justify-between;
+      .badge-icon-content {
+        @apply m-2;
+        .badge-icon {
+          @apply p-2 bg-white rounded-full;
+        }
+      }
+
+      .badge-info {
+        .info {
+          @apply bg-amber-500 py-2 px-3
+          rounded-bl-2xl rounded-tr-xl text-white shadow-lg overflow-hidden;
+        }
+      }
+    }
+  }
+
+  .card-content-container {
+    @apply flex w-2/3;
+    .card-description-container {
+      @apply my-3 mx-6 w-full flex flex-col justify-between;
+      .info-content {
+        @apply flex justify-between items-start;
+        .name-container {
+          @apply flex flex-col;
+          .location {
+            @apply font-light text-gray-500 text-xl;
+          }
+
+          .name {
+            @apply font-semibold text-2xl text-gray-900;
+          }
+        }
+
+        .price-container {
+          @apply flex flex-col;
+          .start {
+            @apply text-gray-700 font-light text-xs;
+          }
+
+          .price {
+            @apply text-2xl font-bold text-black;
+          }
+        }
+      }
+
+      .reservation-info-container {
+        @apply my-6 grid grid-cols-4 gap-6;
+        .info-bulle {
+          @apply flex flex-col items-start;
+          .info-label {
+            @apply font-bold text-xs py-1 text-blue-900;
+          }
+
+          .info-content {
+            @apply flex items-center py-2 px-3 bg-yellow-50 shadow-none rounded;
+            .info-icon {
+              @apply text-xs text-gray-500;
+            }
+
+            span {
+              @apply pl-2 text-xs;
+            }
+          }
+        }
+      }
+
+      .reservation-action-container {
+        @apply flex space-x-6;
+        .star-container {
+          @apply flex;
+          .stars {
+            @apply flex items-center;
+            span {
+              @apply ml-1;
+            }
+          }
+        }
+
+        .add-comment {
+          @apply space-x-2;
+          i {
+            @apply text-gray-600;
+          }
+
+          span {
+            @apply text-gray-600;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.footer {
+  @apply bg-white max-w-full h-full;
+}
+
+.footer-container {
+  @apply border-t-2;
+}
+
+.footer-nav {
+  @apply flex flex-row justify-between py-4 items-center;
+}
+
+.footer-copywrite {
+  @apply flex items-center justify-center text-xs text-gray-500 mb-4 font-semibold text-xs;
+}
+
+.footer-icons {
+  @apply text-gray-800 no-underline;
+  .q-icon {
+    @apply mx-2 no-underline;
+  }
+
+}

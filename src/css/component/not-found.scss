@@ -1,0 +1,22 @@
+.not-found-container {
+  @apply h-[75vh] max-w-full flex bg-black;
+  background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("/src/assets/images/not-found-background.png");
+}
+
+.not-found-content {
+  @apply items-center justify-center mx-auto my-auto flex flex-col;
+}
+
+.not-found-text {
+  @apply font-extrabold text-white font-black mix-blend-overlay text-[218px];
+  text-shadow: 31px -3px 7.47594px rgba(0, 0, 0, 0.23);
+}
+
+.not-found-description {
+  @apply text-white font-normal text-2xl text-center w-2/5;
+}
+
+.not-found-button {
+  @apply btn bg-primary my-5 text-gray-800 rounded;
+}

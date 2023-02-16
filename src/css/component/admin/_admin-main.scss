@@ -1,0 +1,43 @@
+.admin-main-page {
+  @apply my-6 mx-9;
+  .hello-container {
+    @apply inline-flex items-center;
+    .hello-emoji {
+      @apply text-2xl;
+    }
+
+    .hello-text {
+      @apply ml-1 text-xl text-orange-400 font-bold;
+    }
+  }
+
+  .dash-info-container {
+    @apply my-3;
+    .header {
+      @apply my-4;
+      h2 {
+        @apply font-bold text-blue-900;
+      }
+    }
+
+    .content {
+      .content-ul {
+        @apply grid gap-6 lg:grid-cols-4 w-full md:grid-cols-4;
+        .check-label-content {
+          @apply inline-flex justify-between items-center px-5 py-3 w-full
+          text-gray-500 font-bold bg-white rounded-lg shadow border border-gray-200 cursor-pointer
+           hover:text-gray-600
+          hover:bg-gray-100 hover:border-blue-600 hover:shadow-none peer-checked:border-blue-600 peer-checked:text-blue-600;
+          .info-text {
+            @apply w-full text-2xl text-gray-900 font-semibold mb-6;
+          }
+
+          .info-text-2 {
+            @apply w-full font-normal;
+          }
+        }
+      }
+    }
+  }
+
+}

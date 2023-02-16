@@ -1,0 +1,103 @@
+.reservation-page {
+  @apply bg-neutral-100;
+  .reservation-container {
+    @apply container mx-auto max-w-screen-xl py-4;
+    .reservation-stepper {
+      @apply w-60 mx-auto mb-9;
+    }
+
+    .reservation-header {
+      @apply flex flex-col justify-center items-center;
+      .header {
+        h1 {
+          @apply font-semibold text-4xl text-blue-900;
+        }
+      }
+
+      .description {
+        @apply my-1;
+        p {
+          @apply text-gray-800 font-thin;
+        }
+      }
+    }
+
+    .reservation-content {
+      @apply flex my-10 w-full;
+      .reservation-hr {
+        @apply w-0 border-l border-gray-400 py-5;
+      }
+
+      .reservation-habitat {
+        @apply w-1/2;
+        .habitat-info-container {
+          @apply my-6 mx-6;
+          .habitat-image {
+            @apply rounded-xl h-80;
+            .image {
+              @apply w-full h-full rounded-xl object-cover;
+            }
+          }
+        }
+
+        .habitat-info-content {
+          @apply flex justify-between items-center my-4;
+          .habitat-description {
+            @apply flex flex-col justify-between;
+            .name {
+              h2 {
+                @apply text-blue-900 font-semibold capitalize;
+              }
+            }
+
+            .adress {
+              p {
+                @apply text-gray-600 font-thin capitalize;
+              }
+            }
+          }
+
+          .habitat-reservation {
+            p {
+              @apply text-gray-500;
+              span {
+                @apply text-blue-900 font-semibold;
+              }
+            }
+          }
+        }
+      }
+
+      .reservation-form {
+        @apply w-1/2 ;
+
+        .reservation-form-content {
+          @apply mx-9 my-3;
+
+          .hr {
+            @apply absolute px-4 font-medium
+            -translate-x-1/2 bg-gray-100 text-[#C8CBD4];
+          }
+        }
+      }
+    }
+
+    .next-button-container {
+      @apply flex justify-center;
+    }
+  }
+}
+
+.reservation-payment-info {
+  @apply w-1/2;
+}
+
+.reservation-content-success {
+  @apply flex flex-col justify-center items-center my-6;
+  .description{
+    @apply my-3 mt-6;
+    p{
+      @apply font-thin text-gray-600;
+    }
+  }
+}

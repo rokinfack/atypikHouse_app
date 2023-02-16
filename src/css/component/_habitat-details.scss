@@ -1,0 +1,310 @@
+.habitat-details-page {
+  @apply bg-yellow-50;
+  .habitats-details-container {
+    @apply container mx-auto max-w-screen-xl;
+    .breadcrumb {
+      @apply py-4;
+      .b-container {
+        @apply flex;
+        .ol {
+          @apply inline-flex items-center space-x-1 md:space-x-2;
+          .b-link-container {
+            @apply flex items-center;
+            .b-link {
+              @apply inline-flex items-center text-sm font-medium no-underline
+              text-gray-700 hover:text-gray-900 ;
+            }
+          }
+        }
+      }
+    }
+
+    .description-container {
+      @apply flex flex-col;
+      .name {
+        @apply my-3;
+        h1 {
+          @apply text-3xl text-blue-900 font-semibold;
+        }
+      }
+
+      .description-options {
+        @apply flex justify-between;
+        .start-container {
+          @apply flex space-x-1 items-center;
+          .star {
+            @apply flex;
+          }
+
+          .star-description {
+            @apply text-xs text-gray-800 font-light;
+          }
+        }
+
+        .share-container {
+          @apply space-x-4 flex items-center;
+          .register-content {
+            @apply flex items-center space-x-2 hover:cursor-pointer;
+          }
+
+          .share-content {
+            @apply flex items-center space-x-2 hover:cursor-pointer;
+          }
+        }
+      }
+    }
+
+    //.image-container{
+    //  @apply my-9 flex gap-6;
+    //  .presentation-container{
+    //    @apply basis-3/4 h-full w-full;
+    //    .presentation-image{
+    //      @apply h-full w-full object-cover;
+    //    }
+    //  }
+    //  .more-image{
+    //    @apply w-full h-full;
+    //  }
+    //}
+    .image-container {
+      @apply my-4 flex space-x-4;
+
+      .more-overlay {
+        @apply absolute top-0 flex w-full h-full items-center justify-center rounded-xl;
+        .more-text {
+          @apply text-white text-2xl opacity-95;
+        }
+
+        .no-image {
+          @apply text-black;
+        }
+      }
+    }
+
+    .habitat-description-container {
+      @apply my-4 flex;
+      .habitat-description-content {
+        @apply basis-2/3 my-2;
+        .description-header {
+          @apply flex justify-between;
+          .title {
+            @apply text-2xl text-gray-800 font-semibold;
+          }
+
+          .author {
+            @apply text-xs underline text-primary;
+          }
+        }
+
+        .description-content {
+          @apply font-light text-xs text-gray-500;
+        }
+
+        .habitat-type {
+          @apply my-2 w-full;
+          ul {
+            @apply grid grid-cols-2;
+            li {
+              @apply text-gray-800;
+            }
+          }
+        }
+
+        .habitat-equipment {
+          @apply my-1;
+          .equipment-header {
+            @apply my-1;
+            h4 {
+              @apply text-gray-800 font-semibold text-xl;
+            }
+          }
+
+          .equipment-content {
+            @apply flex gap-6 flex-wrap;
+            .item {
+              @apply flex flex-col;
+              .icon {
+                i {
+                  @apply w-4 h-4;
+                }
+              }
+
+              .text {
+                @apply text-gray-500 font-thin;
+              }
+            }
+          }
+        }
+
+        .calendar-container {
+          .header {
+            @apply my-2;
+            h3 {
+              @apply text-xl font-semibold text-blue-800;
+            }
+          }
+
+          .content {
+            @apply my-2;
+          }
+        }
+      }
+
+      .habitat-reservation-container {
+        @apply basis-1/3 bg-white shadow w-full h-full my-3 mx-3 rounded-xl;
+        .content {
+          @apply m-4;
+          .price {
+            @apply my-2;
+            span {
+              @apply text-xl font-semibold text-blue-900;
+            }
+          }
+
+          .arrivals-forms-container {
+            @apply flex w-full space-x-3;
+            .input-label {
+              @apply my-2;
+              label {
+                @apply font-medium text-blue-900;
+              }
+            }
+
+            .input-prefix {
+              @apply w-full mx-0;
+              input {
+                @apply w-full;
+              }
+            }
+          }
+
+          .arrivals-users-forms {
+            @apply my-3;
+          }
+
+          .cost-container {
+            .night-cost {
+              @apply flex justify-between items-center ;
+              .text {
+                @apply text-gray-700 font-semibold;
+              }
+
+              .price {
+                @apply text-gray-700;
+              }
+            }
+
+            .total-cost {
+              @apply flex justify-between items-center;
+              .text {
+                @apply text-gray-700 text-xl font-bold;
+              }
+
+              .price {
+                @apply text-gray-700 text-xl font-bold;
+              }
+            }
+          }
+
+          .button-reservation {
+            @apply my-4;
+          }
+        }
+      }
+    }
+
+    .habitat-location {
+      @apply my-4;
+      .header {
+        @apply text-xl text-blue-900 font-semibold mb-2;
+      }
+
+      .content {
+        @apply w-full;
+        .map {
+          @apply h-[50vh] bg-gray-400;
+        }
+      }
+    }
+
+    .habitat-comment {
+      @apply my-3;
+      .header {
+        h3 {
+          @apply text-blue-900 font-semibold text-xl;
+        }
+      }
+
+      .content {
+        .comment-container {
+          @apply grid grid-cols-2 gap-6 my-6 mx-2;
+          .comment {
+            .header {
+              @apply flex space-x-3;
+              .image {
+                @apply w-10 h-10 rounded-full object-cover;
+              }
+
+              .info {
+                @apply flex flex-col justify-between;
+                .name {
+                  @apply text-sm font-semibold text-gray-900;
+                }
+
+                .occupation {
+                  @apply text-sm font-semibold text-gray-600;
+                }
+              }
+            }
+
+            .content {
+              @apply font-normal text-sm text-neutral-800 my-4;
+            }
+          }
+        }
+      }
+    }
+
+    .habitat-user {
+      @apply my-6 py-3 rounded;
+      .habitat-user-content{
+        @apply bg-white py-6 px-1;
+        .header {
+          @apply flex my-2 space-x-3;
+          .image {
+            @apply w-9 h-9 object-cover rounded-full;
+          }
+        }
+
+        .info {
+          @apply flex flex-col;
+          .name {
+            @apply text-neutral-800 font-semibold;
+          }
+
+          .occupation {
+            @apply text-gray-500 font-thin;
+          }
+        }
+      }
+    }
+  }
+}
+
+.error {
+  .label {
+    @apply text-red-600;
+  }
+
+  .form-control {
+    @apply border-red-600 text-red-400 focus:border-red-500 focus:ring-red-400;
+  }
+
+  .check-box {
+    @apply ring-red-400 border-red-700;
+  }
+
+  .input-prefix {
+    @apply text-red-600;
+  }
+}

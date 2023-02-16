@@ -1,0 +1,16 @@
+.modal{
+  @apply fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-50 flex justify-center items-center w-full overflow-x-hidden overflow-y-auto md:inset-0 md:h-full;
+  .content{
+    @apply relative w-full h-full max-w-2xl md:h-auto;
+  }
+}
+
+.modal-content{
+   @apply w-full bg-white rounded shadow-white p-6;
+  .header{
+    @apply flex justify-between items-center;
+  }
+  .form-modal-content{
+    @apply my-2 w-full;
+  }
+}

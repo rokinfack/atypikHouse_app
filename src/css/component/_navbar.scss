@@ -1,0 +1,19 @@
+.nav-ul {
+  @apply inline-flex;
+}
+
+.nav-link {
+  @apply px-3 px-2 text-black ;
+}
+
+.nav-link-item {
+  @apply no-underline text-black text-sm capitalize font-semibold not-italic text-nav-black-200;
+}
+
+.nav-link-item.active {
+  @apply text-nav-black-100;
+}
+
+.nav-logo {
+  @apply w-[108px] h-[33.5px] cursor-pointer;
+}

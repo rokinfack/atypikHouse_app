@@ -1,0 +1,33 @@
+.stepper-container {
+  @apply flex items-center;
+  .active {
+    @apply p-1 border border-gray-400 rounded-full flex justify-center;
+    span.number {
+      @apply text-xl font-medium text-neutral-800;
+    }
+  }
+
+  .complete{
+    .stepper-icon{
+      background-color: #1ABC9C !important;
+      span.number{
+        @apply bg-green-500;
+      }
+    }
+
+  }
+
+  .stepper-icon-container {
+    @apply flex items-center justify-center text-neutral-600 relative;
+    .stepper-icon {
+      @apply rounded-full transition duration-500 ease-in-out h-12 w-12 bg-gray-300 p-3 justify-center flex items-center;
+      span.number {
+        @apply text-2xl font-light;
+      }
+    }
+  }
+
+  .stepper-hr {
+    @apply flex-auto border-t-2 transition duration-500 ease-in-out border-gray-200;
+  }
+}

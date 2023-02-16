@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /privacy/
+Sitemap: https://atypik-house.herokuapp.com/sitemap.xml

@@ -1,0 +1,16 @@
+.admin-settings-page {
+  @apply my-6 mx-9;
+  .breadcrumb-container{
+    @apply flex justify-between items-center;
+  }
+  .admin-settings-header{
+    .header{
+      h2{
+        @apply font-bold text-blue-900;
+      }
+    }
+  }
+  .admin-settings-content{
+    @apply my-6 flex-col;
+  }
+}
