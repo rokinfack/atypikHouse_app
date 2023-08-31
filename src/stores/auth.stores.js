@@ -33,6 +33,8 @@ export const useAuthStores = defineStore("auth", {
     async login(email, password) {
       try {
         let user_token = await api.post("authentication_token", { email: email, password: password });
+
+        console.log(user_token)
         Cookies.set("token", user_token.data.token);
         Cookies.set("current_user", JSON.stringify(user_token.data.user));
         const user = user_token.data.user;
@@ -58,6 +60,7 @@ export const useAuthStores = defineStore("auth", {
         return user_token;
       } catch (e) {
         const errorMessageAlerts = {
+
           color: "warning", message: e.response.data.message,
           icon: "report_problem", position: "top-right"
         };
@@ -68,6 +71,8 @@ export const useAuthStores = defineStore("auth", {
     async register(data) {
       try {
         let users_token = await api.post("/users", data);
+
+        console.log(users_token);
         const messagesAlerts = {
           color: "green", message: "Inscription réussie",
           icon: "congregate", position: "top-right"
